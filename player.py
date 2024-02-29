@@ -13,3 +13,6 @@ class Player(Turtle):
         self.goto(STARTING_POSITION)
         self.setheading(90)
         
+    def up(self):
+        new_ycor = self.ycor() + 10
+        self.goto(0, new_ycor)                   
