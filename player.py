@@ -7,4 +7,9 @@ FINISH_LINE_Y = 280
 class Player(Turtle):
     def __init__(self) -> None:
         super().__init__()
+        self.color("black")
+        self.shape("turtle")
+        self.penup()
+        self.goto(STARTING_POSITION)
+        self.setheading(90)
         
