@@ -18,6 +18,12 @@ class Scoreboard(Turtle):
         self.clear()
         self.write(f"You are on level {self.level}", align="center", font=FONT)
     
-
+    def game_over_screen(self):
+        self.clear()
+        self.goto(0,10)
+        self.write(f"""
+        Game Over! 
+    You reached level {self.level}""", 
+                   align="center", font=FONT)
         
         
