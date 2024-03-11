@@ -30,8 +30,8 @@ while game_is_on:
 
     #Detect the turtle reaches the other side
     if player.is_at_finish_line():
-        scoreboard.clear_scoreboard()
         car_manager.level_up()
+        print(f'current car speed {car_manager.car_speed}')
         player.go_to_start()
         scoreboard.update_scoreboard()
         
@@ -39,5 +39,5 @@ while game_is_on:
 
 screen.exitonclick()
 
-#TODO clear the score on the scoreboard
+
 
