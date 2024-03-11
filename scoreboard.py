@@ -9,14 +9,15 @@ class Scoreboard(Turtle):
         self.penup()
         self.hideturtle()
         self.level = 1
+        self.write(f"You are on level {self.level}", align="center", font=FONT)
         
 
     def update_scoreboard(self):
         self.goto(0, 0)
         self.level += 1
+        self.clear()
         self.write(f"You are on level {self.level}", align="center", font=FONT)
     
-    def clear_scoreboard(self):
-        self.write("", align="center", font=FONT)
+
         
         
